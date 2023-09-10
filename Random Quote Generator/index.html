@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Project Name: Random Quote Generator
+Youtube: https://youtube.com/@devRasen
+Copyright: ©MdRasen -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator | devRasen</title>
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Quote Box -->
+      <div class="quote-box">
+        <h2 class="title">Random Quote</h2>
+        <hr class="line-break" />
+        <!-- Random Quote -->
+        <div class="quote">
+          <i class="fa-solid fa-quote-left"></i>
+          <p id="quote-text">If you know what I can do, watch your backside.</p>
+          <i class="fa-solid fa-quote-right"></i>
+        </div>
+        <p id="author">- devRasen</p>
+        <div class="btns">
+          <button type="button" class="btn btn-copy" onclick="copyQuote()">
+            Copy Quote <i class="fa-solid fa-copy"></i>
+          </button>
+          <button
+            type="button"
+            class="btn btn-generate"
+            onclick="generateQuote()"
+          >
+            Generate Quote <i class="fa-solid fa-repeat"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
